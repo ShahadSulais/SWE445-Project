@@ -1,7 +1,5 @@
 # Secure Healthcare Management System
 
-![Secure Healthcare Management System preview](assets/social-preview.png)
-
 Secure healthcare management system supporting appointment scheduling, secure medical record access, and protected patient data sharing.
 
 This SWE 445 project focuses on building healthcare workflows with security controls such as role-based access control, OTP verification, consent, audit logging, input validation, and rate limiting.
