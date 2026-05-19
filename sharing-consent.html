@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Consent Confirmation</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body class="dashboard-page">
+    <aside class="sidebar">
+      <div class="side-brand">
+        <div class="side-logo" aria-hidden="true">
+          <svg viewBox="0 0 40 40">
+            <rect x="2" y="2" width="36" height="36" rx="9"></rect>
+            <path d="M12 28V12h7v16M21 28V9h7v19M8 28h24"></path>
+            <path d="M15.5 16v8M11.5 20h8M24.5 15v4M22.5 17h4"></path>
+          </svg>
+        </div>
+        <strong>As-Shifa</strong>
+      </div>
+
+      <nav class="side-nav" aria-label="Main navigation">
+        <a href="#"><svg viewBox="0 0 24 24"><path d="M12 3a9 9 0 1 0 9 9h-9V3Z"></path><path d="M13 3.05A9 9 0 0 1 20.95 11H13V3.05Z"></path></svg>Dashboard</a>
+        <a href="#"><svg viewBox="0 0 24 24"><path d="M16 21v-2a4 4 0 0 0-8 0v2"></path><circle cx="12" cy="7" r="4"></circle><path d="M6 10H4m16 0h-2M12 14v2"></path></svg>Doctors</a>
+        <a href="#"><svg viewBox="0 0 24 24"><path d="M16 21v-2a4 4 0 0 0-8 0v2"></path><circle cx="12" cy="7" r="4"></circle><path d="M22 21v-2a4 4 0 0 0-3-3.87M2 21v-2a4 4 0 0 1 3-3.87"></path></svg>Patients</a>
+        <a href="#"><svg viewBox="0 0 24 24"><path d="M8 2v4m8-4v4M3 10h18"></path><rect x="3" y="4" width="18" height="18" rx="2"></rect><path d="m9 16 2 2 4-5"></path></svg>Appointments</a>
+        <a class="active" href="record-sharing.html"><svg viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10Z"></path></svg>Record Sharing</a>
+        <a href="#"><svg viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8Z"></path><path d="M14 2v6h6M9 15h6M9 18h6M9 12h2"></path></svg>Billing</a>
+        <a href="#"><svg viewBox="0 0 24 24"><path d="M3 3v18h18"></path><path d="m7 14 4-4 3 3 5-6"></path></svg>Reports</a>
+        <a href="#"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="3"></circle><path d="M19.4 15a1.7 1.7 0 0 0 .34 1.88l.06.06a2 2 0 1 1-2.83 2.83l-.06-.06A1.7 1.7 0 0 0 15 19.4a1.7 1.7 0 0 0-1 .6 1.7 1.7 0 0 0-.4 1.1V21a2 2 0 1 1-4 0v-.09A1.7 1.7 0 0 0 8.6 19.4a1.7 1.7 0 0 0-1.88.34l-.06.06a2 2 0 1 1-2.83-2.83l.06-.06A1.7 1.7 0 0 0 4.6 15a1.7 1.7 0 0 0-.6-1 1.7 1.7 0 0 0-1.1-.4H3a2 2 0 1 1 0-4h.09A1.7 1.7 0 0 0 4.6 8.6a1.7 1.7 0 0 0-.34-1.88l-.06-.06A2 2 0 1 1 6.83 3.83l.06.06A1.7 1.7 0 0 0 9 4.6a1.7 1.7 0 0 0 1-.6 1.7 1.7 0 0 0 .4-1.1V3a2 2 0 1 1 4 0v.09A1.7 1.7 0 0 0 15.4 4.6a1.7 1.7 0 0 0 1.88-.34l.06-.06A2 2 0 1 1 18.83 3.83l-.06.06A1.7 1.7 0 0 0 19.4 9c.2.37.52.68.9.9.31.18.68.3 1.1.3h.1a2 2 0 1 1 0 4h-.09a1.7 1.7 0 0 0-1.51.8Z"></path></svg>Settings</a>
+      </nav>
+
+      <div class="staff-card">
+        <span>PR</span>
+        <strong>Nora Alkuwaihes</strong>
+      </div>
+    </aside>
+
+    <main class="appointments-main">
+      <header class="topbar">
+        <div class="crumb">
+          <span>Patient Records</span>
+          <svg viewBox="0 0 20 20" aria-hidden="true"><path d="m7 4 6 6-6 6"></path></svg>
+          <span>Sharing Authorization</span>
+          <svg viewBox="0 0 20 20" aria-hidden="true"><path d="m7 4 6 6-6 6"></path></svg>
+          <strong>Consent Confirmation</strong>
+        </div>
+        <div class="top-actions">
+          <button class="date-button"><svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="18" rx="2"></rect><path d="M8 2v4m8-4v4M3 10h18"></path></svg>Today, May 6<svg viewBox="0 0 20 20"><path d="m5.5 7.5 4.5 4.5 4.5-4.5"></path></svg></button>
+          <button class="round-action" aria-label="Notifications"><svg viewBox="0 0 24 24"><path d="M18 8a6 6 0 1 0-12 0c0 7-3 7-3 9h18c0-2-3-2-3-9"></path><path d="M13.73 21a2 2 0 0 1-3.46 0"></path></svg></button>
+          <span class="profile-dot">PR</span>
+        </div>
+      </header>
+
+      <section class="consent-content">
+        <div class="consent-left">
+          <div class="consent-heading">
+            <h1>Review and Provide Consent</h1>
+            <p>You are authorizing a secure data transfer to a designated healthcare provider.</p>
+          </div>
+
+          <article class="consent-info-card">
+            <h2>Recipient Information</h2>
+            <div class="recipient-profile">
+              <span class="recipient-avatar" aria-hidden="true"></span>
+              <div>
+                <strong id="consentProviderName">Selected provider</strong>
+                <p>Healthcare provider</p>
+                <em>Medical License ID: SHA-44921</em>
+              </div>
+            </div>
+          </article>
+
+          <article class="consent-scope-card">
+            <h2>Shared Data Scope</h2>
+            <p>
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 11h6M9 15h6"></path><rect x="4" y="3" width="16" height="18" rx="2"></rect></svg>
+              Selected medical records
+            </p>
+            <p>
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 8v5l3 3"></path><circle cx="12" cy="12" r="9"></circle></svg>
+              Valid for: <span id="consentDuration">24 Hours</span>
+            </p>
+          </article>
+
+          <div class="consent-audit-pill">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10Z"></path><path d="m9 12 2 2 4-5"></path></svg>
+            Audit Trail Active: #LOG-882-QX
+          </div>
+        </div>
+
+        <div class="consent-right">
+          <article class="consent-document">
+            <div class="consent-doc-head">
+              <strong>Digital Consent Form V4.2</strong>
+              <button type="button">Download PDF</button>
+            </div>
+            <h2>Authorization for Disclosure of Protected Health Information</h2>
+            <p>Pursuant to the Health Insurance Portability and Accountability Act (HIPAA), I hereby authorize As-Shifa Clinical Sanctuary to release the specified portions of my electronic medical record to <span id="consentDocumentProvider">the selected provider</span>.</p>
+            <p><strong>1. Scope of Release:</strong> This authorization includes the selected record categories required for clinical coordination, second-opinion consultation, and continuity of care.</p>
+            <p><strong>2. Expiration:</strong> This authorization expires according to the selected time-limited access window.</p>
+          </article>
+
+          <form class="consent-signature-card" id="sharingSecurityForm">
+            <label class="consent-signature-field">
+              <span>Type Full Name as Digital Signature</span>
+              <input id="consentSignatureInput" type="text" autocomplete="name" placeholder="Enter your full legal name" />
+            </label>
+
+            <label class="consent-confirm-row">
+              <input id="consentAcknowledgeCheckbox" type="checkbox" />
+              <span>I understand that I can revoke this consent at any time via my security dashboard. This action will immediately terminate the sharing link.</span>
+            </label>
+
+            <p class="sharing-security-message" id="sharingSecurityMessage" role="status" aria-live="polite"></p>
+
+            <div class="consent-actions">
+              <button id="confirmSharingButton" type="submit">Sign and Authorize Sharing</button>
+              <a href="sharing-data-selection.html">Back</a>
+            </div>
+          </form>
+        </div>
+
+        <footer class="consent-footer">
+          <span>HIPAA Compliant</span>
+          <span>End-to-End Encryption</span>
+          <span>Secure Portal V2.0</span>
+        </footer>
+      </section>
+    </main>
+
+    <script src="website.js?v=44"></script>
+  </body>
+</html>

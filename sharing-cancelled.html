@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sharing Cancelled</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body class="dashboard-page">
+    <aside class="sidebar">
+      <div class="side-brand">
+        <div class="side-logo" aria-hidden="true">
+          <svg viewBox="0 0 40 40">
+            <rect x="2" y="2" width="36" height="36" rx="9"></rect>
+            <path d="M12 28V12h7v16M21 28V9h7v19M8 28h24"></path>
+            <path d="M15.5 16v8M11.5 20h8M24.5 15v4M22.5 17h4"></path>
+          </svg>
+        </div>
+        <strong>As-Shifa</strong>
+      </div>
+
+      <nav class="side-nav" aria-label="Main navigation">
+        <a href="#"><svg viewBox="0 0 24 24"><path d="M12 3a9 9 0 1 0 9 9h-9V3Z"></path><path d="M13 3.05A9 9 0 0 1 20.95 11H13V3.05Z"></path></svg>Dashboard</a>
+        <a href="#"><svg viewBox="0 0 24 24"><path d="M16 21v-2a4 4 0 0 0-8 0v2"></path><circle cx="12" cy="7" r="4"></circle><path d="M6 10H4m16 0h-2M12 14v2"></path></svg>Doctors</a>
+        <a href="#"><svg viewBox="0 0 24 24"><path d="M16 21v-2a4 4 0 0 0-8 0v2"></path><circle cx="12" cy="7" r="4"></circle><path d="M22 21v-2a4 4 0 0 0-3-3.87M2 21v-2a4 4 0 0 1 3-3.87"></path></svg>Patients</a>
+        <a href="#"><svg viewBox="0 0 24 24"><path d="M8 2v4m8-4v4M3 10h18"></path><rect x="3" y="4" width="18" height="18" rx="2"></rect><path d="m9 16 2 2 4-5"></path></svg>Appointments</a>
+        <a class="active" href="record-sharing.html"><svg viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10Z"></path></svg>Record Sharing</a>
+        <a href="#"><svg viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8Z"></path><path d="M14 2v6h6M9 15h6M9 18h6M9 12h2"></path></svg>Billing</a>
+        <a href="#"><svg viewBox="0 0 24 24"><path d="M3 3v18h18"></path><path d="m7 14 4-4 3 3 5-6"></path></svg>Reports</a>
+        <a href="#"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="3"></circle><path d="M19.4 15a1.7 1.7 0 0 0 .34 1.88l.06.06a2 2 0 1 1-2.83 2.83l-.06-.06A1.7 1.7 0 0 0 15 19.4a1.7 1.7 0 0 0-1 .6 1.7 1.7 0 0 0-.4 1.1V21a2 2 0 1 1-4 0v-.09A1.7 1.7 0 0 0 8.6 19.4a1.7 1.7 0 0 0-1.88.34l-.06.06a2 2 0 1 1-2.83-2.83l.06-.06A1.7 1.7 0 0 0 4.6 15a1.7 1.7 0 0 0-.6-1 1.7 1.7 0 0 0-1.1-.4H3a2 2 0 1 1 0-4h.09A1.7 1.7 0 0 0 4.6 8.6a1.7 1.7 0 0 0-.34-1.88l-.06-.06A2 2 0 1 1 6.83 3.83l.06.06A1.7 1.7 0 0 0 9 4.6a1.7 1.7 0 0 0 1-.6 1.7 1.7 0 0 0 .4-1.1V3a2 2 0 1 1 4 0v.09A1.7 1.7 0 0 0 15.4 4.6a1.7 1.7 0 0 0 1.88-.34l.06-.06a2 2 0 1 1 2.83 2.83l-.06.06A1.7 1.7 0 0 0 19.4 9c.2.37.52.68.9.9.31.18.68.3 1.1.3h.1a2 2 0 1 1 0 4h-.09a1.7 1.7 0 0 0-1.51.8Z"></path></svg>Settings</a>
+      </nav>
+
+      <div class="staff-card">
+        <span>PR</span>
+        <strong>Nora Alkuwaihes</strong>
+      </div>
+    </aside>
+
+    <main class="appointments-main">
+      <header class="topbar">
+        <div class="crumb">
+          <span>Patient Records</span>
+          <svg viewBox="0 0 20 20" aria-hidden="true"><path d="m7 4 6 6-6 6"></path></svg>
+          <span>Sharing Authorization</span>
+          <svg viewBox="0 0 20 20" aria-hidden="true"><path d="m7 4 6 6-6 6"></path></svg>
+          <strong>Sharing Cancellation</strong>
+        </div>
+        <div class="top-actions">
+          <button class="date-button"><svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="18" rx="2"></rect><path d="M8 2v4m8-4v4M3 10h18"></path></svg>Today, May 3<svg viewBox="0 0 20 20"><path d="m5.5 7.5 4.5 4.5 4.5-4.5"></path></svg></button>
+          <button class="round-action" aria-label="Notifications"><svg viewBox="0 0 24 24"><path d="M18 8a6 6 0 1 0-12 0c0 7-3 7-3 9h18c0-2-3-2-3-9"></path><path d="M13.73 21a2 2 0 0 1-3.46 0"></path></svg></button>
+          <span class="profile-dot">PR</span>
+        </div>
+      </header>
+
+      <section class="sharing-cancelled-content">
+        <article class="sharing-cancelled-card">
+          <span class="cancelled-mark">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m7 12 3 3 7-8"></path></svg>
+          </span>
+          <h1>Sharing request cancelled</h1>
+          <p>No medical information was shared.</p>
+          <div class="privacy-protected">
+            <strong>Your privacy remains protected</strong>
+            <span>?</span>
+          </div>
+          <a href="record-sharing.html">Return to Dashboard</a>
+        </article>
+      </section>
+    </main>
+
+    <script src="website.js?v=43"></script>
+  </body>
+</html>

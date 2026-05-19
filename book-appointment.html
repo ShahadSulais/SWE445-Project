@@ -1,0 +1,260 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Book Appointment</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body class="dashboard-page">
+    <aside class="sidebar">
+      <div class="side-brand">
+        <div class="side-logo" aria-hidden="true">
+          <svg viewBox="0 0 40 40">
+            <rect x="2" y="2" width="36" height="36" rx="9"></rect>
+            <path d="M12 28V12h7v16M21 28V9h7v19M8 28h24"></path>
+            <path d="M15.5 16v8M11.5 20h8M24.5 15v4M22.5 17h4"></path>
+          </svg>
+        </div>
+        <strong>As-Shifa</strong>
+      </div>
+
+      <nav class="side-nav" aria-label="Main navigation">
+        <a href="#"><svg viewBox="0 0 24 24"><path d="M12 3a9 9 0 1 0 9 9h-9V3Z"></path><path d="M13 3.05A9 9 0 0 1 20.95 11H13V3.05Z"></path></svg>Dashboard</a>
+        <a href="#"><svg viewBox="0 0 24 24"><path d="M16 21v-2a4 4 0 0 0-8 0v2"></path><circle cx="12" cy="7" r="4"></circle><path d="M6 10H4m16 0h-2M12 14v2"></path></svg>Doctors</a>
+        <a href="reception-patient-profile.html"><svg viewBox="0 0 24 24"><path d="M16 21v-2a4 4 0 0 0-8 0v2"></path><circle cx="12" cy="7" r="4"></circle><path d="M22 21v-2a4 4 0 0 0-3-3.87M2 21v-2a4 4 0 0 1 3-3.87"></path></svg>Patients</a>
+        <a class="active" href="appointments.html"><svg viewBox="0 0 24 24"><path d="M8 2v4m8-4v4M3 10h18"></path><rect x="3" y="4" width="18" height="18" rx="2"></rect><path d="m9 16 2 2 4-5"></path></svg>Appointments</a>
+        <a href="#"><svg viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8Z"></path><path d="M14 2v6h6M9 15h6M9 18h6M9 12h2"></path></svg>Billing</a>
+        <a href="#"><svg viewBox="0 0 24 24"><path d="M3 3v18h18"></path><path d="m7 14 4-4 3 3 5-6"></path></svg>Reports</a>
+        <a href="#"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="3"></circle><path d="M19.4 15a1.7 1.7 0 0 0 .34 1.88l.06.06a2 2 0 1 1-2.83 2.83l-.06-.06A1.7 1.7 0 0 0 15 19.4a1.7 1.7 0 0 0-1 .6 1.7 1.7 0 0 0-.4 1.1V21a2 2 0 1 1-4 0v-.09A1.7 1.7 0 0 0 8.6 19.4a1.7 1.7 0 0 0-1.88.34l-.06.06a2 2 0 1 1-2.83-2.83l.06-.06A1.7 1.7 0 0 0 4.6 15a1.7 1.7 0 0 0-.6-1 1.7 1.7 0 0 0-1.1-.4H3a2 2 0 1 1 0-4h.09A1.7 1.7 0 0 0 4.6 8.6a1.7 1.7 0 0 0-.34-1.88l-.06-.06a2 2 0 1 1 2.83-2.83l.06.06A1.7 1.7 0 0 0 9 4.6a1.7 1.7 0 0 0 1-.6 1.7 1.7 0 0 0 .4-1.1V3a2 2 0 1 1 4 0v.09A1.7 1.7 0 0 0 15.4 4.6a1.7 1.7 0 0 0 1.88-.34l.06-.06a2 2 0 1 1 2.83 2.83l-.06.06A1.7 1.7 0 0 0 19.4 9c.2.37.52.68.9.9.31.18.68.3 1.1.3h.1a2 2 0 1 1 0 4h-.09a1.7 1.7 0 0 0-1.51.8Z"></path></svg>Settings</a>
+      </nav>
+
+      <div class="staff-card">
+        <span>RC</span>
+        <strong>Receptionist: Rahf Altwairqi</strong>
+      </div>
+    </aside>
+
+    <main class="appointments-main">
+      <header class="topbar">
+        <div class="crumb">
+          <span>Appointments</span>
+          <svg viewBox="0 0 20 20" aria-hidden="true"><path d="m7 4 6 6-6 6"></path></svg>
+          <strong>Book Appointment</strong>
+        </div>
+        <div class="top-actions">
+          <button class="date-button"><svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="18" rx="2"></rect><path d="M8 2v4m8-4v4M3 10h18"></path></svg>Today, May 3<svg viewBox="0 0 20 20"><path d="m5.5 7.5 4.5 4.5 4.5-4.5"></path></svg></button>
+          <button class="round-action" aria-label="Notifications"><svg viewBox="0 0 24 24"><path d="M18 8a6 6 0 1 0-12 0c0 7-3 7-3 9h18c0-2-3-2-3-9"></path><path d="M13.73 21a2 2 0 0 1-3.46 0"></path></svg></button>
+          <span class="profile-dot">RC</span>
+        </div>
+      </header>
+
+      <section class="rate-limit-banner" id="rateLimitBanner" aria-live="assertive" hidden>
+        <div class="rate-limit-message">
+          <span class="rate-limit-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10Z"></path><path d="M12 8v5"></path><path d="M12 16h.01"></path></svg>
+          </span>
+          <div>
+            <strong>Security &amp; Rate Limiting Active</strong>
+            <p>Unusual scheduling activity detected. Rate limits applied to protect patient data.</p>
+          </div>
+        </div>
+        <div class="rate-limit-status">
+          <div>
+            <strong>Attempts Remaining</strong>
+            <span id="bookingAttemptsRemaining">2 / 5</span>
+          </div>
+          <div>
+            <strong>Cooldown Timer</strong>
+            <span><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"></circle><path d="M12 7v5l3 2"></path></svg><span id="bookingCooldownTimer">00:30</span></span>
+          </div>
+        </div>
+      </section>
+
+      <section class="rate-limit-banner blocked-limit-banner" id="blockedLimitBanner" aria-live="assertive" hidden>
+        <div class="rate-limit-message">
+          <span class="rate-limit-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24"><path d="M10.3 3.9 2.4 18a2 2 0 0 0 1.7 3h15.8a2 2 0 0 0 1.7-3L13.7 3.9a2 2 0 0 0-3.4 0Z"></path><path d="M12 9v4"></path><path d="M12 17h.01"></path></svg>
+          </span>
+          <div>
+            <strong>Action Blocked: Rate Limit Exceeded</strong>
+            <p>We detected too many scheduling requests in a short period. For security, further actions are temporarily paused.</p>
+          </div>
+        </div>
+        <div class="rate-limit-status blocked-limit-status">
+          <div>
+            <strong>Status</strong>
+            <span><i aria-hidden="true"></i>Temporarily Locked</span>
+          </div>
+          <div>
+            <strong>Retry Available In</strong>
+            <span><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"></circle><path d="M12 7v5l3 2"></path></svg><span id="blockedRetryTimer">00:59</span></span>
+          </div>
+        </div>
+      </section>
+
+      <section class="booking-content">
+        <div class="booking-left">
+          <article class="doctor-profile">
+            <div class="profile-top">
+              <span class="doctor-avatar avatar-woman" aria-hidden="true"></span>
+              <div>
+                <h1>Dr. Shahad Sulais</h1>
+                <p>Dermatologist</p>
+                <span class="rating">★ 4.8 <small>(124 reviews)</small></span>
+              </div>
+            </div>
+            <div class="profile-line">
+              <span class="soft-icon">⌖</span>
+              <div>
+                <strong>As-Shifa Hospital - Room 101</strong>
+                <p>Dhahran 34464, Saudi Arabia</p>
+              </div>
+            </div>
+            <div class="profile-line">
+              <span class="soft-icon">♘</span>
+              <div>
+                <strong>Consultation Type</strong>
+                <p>In-person visit</p>
+              </div>
+            </div>
+          </article>
+
+          <article class="patient-card">
+            <div class="patient-heading">
+              <span class="patient-icon">♙</span>
+              <div>
+                <strong>Patient Verification</strong>
+                <p>Required before booking</p>
+              </div>
+            </div>
+            <label class="patient-input">
+              <svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"></circle><path d="m16 16 5 5"></path></svg>
+              <input id="patientIdInput" type="text" placeholder="Enter Patient ID" />
+            </label>
+            <label class="reason-field">
+              <span>Reason for Visit</span>
+              <select id="reasonSelect">
+                <option value="" selected>Select Reason</option>
+                <option>Routine Checkup</option>
+                <option>Follow-up</option>
+                <option>New Concern</option>
+              </select>
+            </label>
+          </article>
+        </div>
+
+        <section class="time-card">
+          <div class="time-head">
+            <h2>Select Date &amp; Time</h2>
+            <div class="month-switch">
+              <button aria-label="Previous month">‹</button>
+              <strong>May 2026</strong>
+              <button aria-label="Next month">›</button>
+            </div>
+          </div>
+
+          <div class="time-unavailable-alert" id="timeUnavailableAlert" role="status" aria-live="polite">
+            <span class="alert-icon">!</span>
+            <div>
+              <strong>The selected appointment time is no longer available.</strong>
+              <p>Please choose another available time to continue with your booking.</p>
+            </div>
+          </div>
+
+          <div class="patient-required-alert" id="patientRequiredAlert" role="status" aria-live="polite">
+            <span class="alert-icon">!</span>
+            <div>
+              <strong id="bookingValidationTitle">Patient verification is required before booking.</strong>
+              <p id="bookingValidationMessage">Please enter the Patient ID to review and confirm this appointment.</p>
+            </div>
+          </div>
+
+          <div class="date-options" data-choice-group="date">
+            <button class="choice date-choice" type="button" data-label="Mon, May 18"><small>Mon</small><strong>18</strong><span>2 slots</span></button>
+            <button class="choice date-choice disabled" type="button" disabled><small>Tue</small><strong>19</strong><span>-</span></button>
+            <button class="choice date-choice" type="button" data-label="Wed, May 20"><small>Wed</small><strong>20</strong><span>6 slots</span></button>
+            <button class="choice date-choice conflict-date" type="button" data-label="Thu, May 21" data-conflict="true"><small>Thu</small><strong>21</strong><span>4 slots</span></button>
+            <button class="choice date-choice" type="button" data-label="Fri, May 22"><small>Fri</small><strong>22</strong><span>1 slot</span></button>
+          </div>
+
+          <div class="slot-section">
+            <h3><span>☼</span>Morning</h3>
+            <div class="slot-grid" data-choice-group="time">
+              <button class="choice slot-choice" type="button" data-label="11:00-11:30 AM">11:00 - 11:30</button>
+              <button class="choice slot-choice disabled" type="button" disabled>12:00 - 12:30</button>
+            </div>
+          </div>
+
+          <div class="slot-section">
+            <h3><span>☼</span>Day</h3>
+            <div class="slot-grid" data-choice-group="time">
+              <button class="choice slot-choice" type="button" data-label="13:30-14:30 PM">13:30 - 14:30</button>
+              <button class="choice slot-choice disabled" type="button" disabled>15:00 - 15:30</button>
+              <button class="choice slot-choice conflict-slot" type="button" data-label="15:30-16:00 PM">15:30 - 16:00</button>
+            </div>
+          </div>
+
+          <div class="slot-section">
+            <h3 class="evening"><span>☾</span>Evening</h3>
+            <div class="slot-grid" data-choice-group="time">
+              <button class="choice slot-choice" type="button" data-label="17:30-18:00 PM">17:30 - 18:00</button>
+            </div>
+          </div>
+
+          <footer class="booking-footer">
+            <p>Selected: <strong id="bookingSelection">Choose date and time</strong></p>
+            <a href="appointments.html">Back</a>
+            <button class="review-button" id="reviewAppointmentButton" type="button">Review Appointment <span>→</span></button>
+          </footer>
+        </section>
+      </section>
+
+      <section class="security-verification-panel" id="securityVerificationPanel" aria-live="polite" hidden>
+        <div class="verification-card">
+          <div class="verification-title">
+            <span aria-hidden="true">
+              <svg viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10Z"></path><path d="M12 8v5"></path><path d="M12 16h.01"></path></svg>
+            </span>
+            <div>
+              <h2>Security Verification</h2>
+              <p>Please verify you are human to proceed with scheduling.</p>
+            </div>
+          </div>
+
+          <label class="human-check">
+            <input id="humanCheck" type="checkbox" />
+            <span>I am human</span>
+            <small>Privacy - Terms</small>
+          </label>
+
+          <div class="captcha-card">
+            <div class="captcha-head">
+              <small>Select all images with</small>
+              <strong>medical facilities</strong>
+            </div>
+            <div class="captcha-grid" aria-label="CAPTCHA image choices">
+              <button type="button">Hospital</button>
+              <button type="button">Eye</button>
+              <button type="button">Clinic</button>
+              <button type="button">Taxi</button>
+              <button type="button">Hallway</button>
+              <button type="button">Street</button>
+              <button type="button">Bike</button>
+              <button type="button">ER</button>
+              <button type="button">Lake</button>
+            </div>
+            <button class="verify-human-button" id="verifyHumanButton" type="button">Verify</button>
+          </div>
+        </div>
+
+        <button class="submit-disabled" type="button" disabled>
+          <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="5" y="11" width="14" height="10" rx="2"></rect><path d="M8 11V8a4 4 0 0 1 8 0v3"></path></svg>
+          Submit Appointment
+        </button>
+      </section>
+    </main>
+
+    <script src="website.js?v=47"></script>
+  </body>
+</html>

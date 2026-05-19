@@ -1,0 +1,256 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Confirm Booking</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body class="dashboard-page">
+    <aside class="sidebar">
+      <div class="side-brand">
+        <div class="side-logo" aria-hidden="true">
+          <svg viewBox="0 0 40 40">
+            <rect x="2" y="2" width="36" height="36" rx="9"></rect>
+            <path d="M12 28V12h7v16M21 28V9h7v19M8 28h24"></path>
+            <path d="M15.5 16v8M11.5 20h8M24.5 15v4M22.5 17h4"></path>
+          </svg>
+        </div>
+        <strong>As-Shifa</strong>
+      </div>
+
+      <nav class="side-nav" aria-label="Main navigation">
+        <a href="#"><svg viewBox="0 0 24 24"><path d="M12 3a9 9 0 1 0 9 9h-9V3Z"></path><path d="M13 3.05A9 9 0 0 1 20.95 11H13V3.05Z"></path></svg>Dashboard</a>
+        <a href="#"><svg viewBox="0 0 24 24"><path d="M16 21v-2a4 4 0 0 0-8 0v2"></path><circle cx="12" cy="7" r="4"></circle><path d="M6 10H4m16 0h-2M12 14v2"></path></svg>Doctors</a>
+        <a href="reception-patient-profile.html"><svg viewBox="0 0 24 24"><path d="M16 21v-2a4 4 0 0 0-8 0v2"></path><circle cx="12" cy="7" r="4"></circle><path d="M22 21v-2a4 4 0 0 0-3-3.87M2 21v-2a4 4 0 0 1 3-3.87"></path></svg>Patients</a>
+        <a class="active" href="appointments.html"><svg viewBox="0 0 24 24"><path d="M8 2v4m8-4v4M3 10h18"></path><rect x="3" y="4" width="18" height="18" rx="2"></rect><path d="m9 16 2 2 4-5"></path></svg>Appointments</a>
+        <a href="#"><svg viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8Z"></path><path d="M14 2v6h6M9 15h6M9 18h6M9 12h2"></path></svg>Billing</a>
+        <a href="#"><svg viewBox="0 0 24 24"><path d="M3 3v18h18"></path><path d="m7 14 4-4 3 3 5-6"></path></svg>Reports</a>
+        <a href="#"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="3"></circle><path d="M19.4 15a1.7 1.7 0 0 0 .34 1.88l.06.06a2 2 0 1 1-2.83 2.83l-.06-.06A1.7 1.7 0 0 0 15 19.4a1.7 1.7 0 0 0-1 .6 1.7 1.7 0 0 0-.4 1.1V21a2 2 0 1 1-4 0v-.09A1.7 1.7 0 0 0 8.6 19.4a1.7 1.7 0 0 0-1.88.34l-.06.06a2 2 0 1 1-2.83-2.83l.06-.06A1.7 1.7 0 0 0 4.6 15a1.7 1.7 0 0 0-.6-1 1.7 1.7 0 0 0-1.1-.4H3a2 2 0 1 1 0-4h.09A1.7 1.7 0 0 0 4.6 8.6a1.7 1.7 0 0 0-.34-1.88l-.06-.06A2 2 0 1 1 6.83 3.83l.06.06A1.7 1.7 0 0 0 9 4.6a1.7 1.7 0 0 0 1-.6 1.7 1.7 0 0 0 .4-1.1V3a2 2 0 1 1 4 0v.09A1.7 1.7 0 0 0 15.4 4.6a1.7 1.7 0 0 0 1.88-.34l.06-.06a2 2 0 1 1 2.83 2.83l-.06.06A1.7 1.7 0 0 0 19.4 9c.2.37.52.68.9.9.31.18.68.3 1.1.3h.1a2 2 0 1 1 0 4h-.09a1.7 1.7 0 0 0-1.51.8Z"></path></svg>Settings</a>
+      </nav>
+
+      <div class="staff-card">
+        <span>RC</span>
+        <strong>Receptionist: Rahf Altwairqi</strong>
+      </div>
+    </aside>
+
+    <main class="appointments-main">
+      <header class="topbar">
+        <div class="crumb">
+          <span>Appointments</span>
+          <svg viewBox="0 0 20 20" aria-hidden="true"><path d="m7 4 6 6-6 6"></path></svg>
+          <span>Book Appointment</span>
+          <svg viewBox="0 0 20 20" aria-hidden="true"><path d="m7 4 6 6-6 6"></path></svg>
+          <strong>Confirm Booking</strong>
+        </div>
+        <div class="top-actions">
+          <button class="date-button"><svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="18" rx="2"></rect><path d="M8 2v4m8-4v4M3 10h18"></path></svg>Today, May 3<svg viewBox="0 0 20 20"><path d="m5.5 7.5 4.5 4.5 4.5-4.5"></path></svg></button>
+          <button class="round-action" aria-label="Notifications"><svg viewBox="0 0 24 24"><path d="M18 8a6 6 0 1 0-12 0c0 7-3 7-3 9h18c0-2-3-2-3-9"></path><path d="M13.73 21a2 2 0 0 1-3.46 0"></path></svg></button>
+          <span class="profile-dot">RC</span>
+        </div>
+      </header>
+
+      <section class="rate-limit-banner" id="rateLimitBanner" aria-live="assertive" hidden>
+        <div class="rate-limit-message">
+          <span class="rate-limit-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10Z"></path><path d="M12 8v5"></path><path d="M12 16h.01"></path></svg>
+          </span>
+          <div>
+            <strong>Security &amp; Rate Limiting Active</strong>
+            <p>Unusual scheduling activity detected. Rate limits applied to protect patient data.</p>
+          </div>
+        </div>
+        <div class="rate-limit-status">
+          <div>
+            <strong>Attempts Remaining</strong>
+            <span id="bookingAttemptsRemaining">2 / 5</span>
+          </div>
+          <div>
+            <strong>Cooldown Timer</strong>
+            <span><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"></circle><path d="M12 7v5l3 2"></path></svg><span id="bookingCooldownTimer">00:30</span></span>
+          </div>
+        </div>
+      </section>
+
+      <section class="rate-limit-banner blocked-limit-banner" id="blockedLimitBanner" aria-live="assertive" hidden>
+        <div class="rate-limit-message">
+          <span class="rate-limit-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24"><path d="M10.3 3.9 2.4 18a2 2 0 0 0 1.7 3h15.8a2 2 0 0 0 1.7-3L13.7 3.9a2 2 0 0 0-3.4 0Z"></path><path d="M12 9v4"></path><path d="M12 17h.01"></path></svg>
+          </span>
+          <div>
+            <strong>Action Blocked: Rate Limit Exceeded</strong>
+            <p>We detected too many scheduling requests in a short period. For security, further actions are temporarily paused.</p>
+          </div>
+        </div>
+        <div class="rate-limit-status blocked-limit-status">
+          <div>
+            <strong>Status</strong>
+            <span><i aria-hidden="true"></i>Temporarily Locked</span>
+          </div>
+          <div>
+            <strong>Retry Available In</strong>
+            <span><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"></circle><path d="M12 7v5l3 2"></path></svg><span id="blockedRetryTimer">00:59</span></span>
+          </div>
+        </div>
+      </section>
+
+      <section class="confirm-content">
+        <div>
+          <h1>Review Appointment Details</h1>
+          <p>Please verify the information below before finalizing the booking.</p>
+        </div>
+
+        <div class="confirm-grid">
+          <article class="confirm-summary">
+            <div class="summary-head">
+              <h2>Appointment Summary</h2>
+            </div>
+
+            <div class="summary-doctor">
+              <span class="doctor-avatar avatar-woman" aria-hidden="true"></span>
+              <div>
+                <h3 id="summaryDoctor">Dr. Shahad Sulais</h3>
+                <p id="summarySpecialty">Dermatologist</p>
+                <span class="summary-pill">
+                  <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 7v5a8 8 0 0 1-16 0V7"></path><path d="M8 3v4m8-4v4"></path></svg>
+                  Consultation
+                </span>
+              </div>
+            </div>
+
+            <div class="summary-list">
+              <div class="summary-item">
+                <span><svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="18" rx="2"></rect><path d="M8 2v4m8-4v4M3 10h18"></path></svg></span>
+                <div>
+                  <small>Date &amp; Time</small>
+                  <strong id="summaryDate">Wednesday, May 20, 2026</strong>
+                  <em id="summaryTime">15:30 AM - 16:00 PM</em>
+                </div>
+              </div>
+              <div class="summary-item">
+                <span><svg viewBox="0 0 24 24"><path d="M20 10c0 5-8 11-8 11S4 15 4 10a8 8 0 1 1 16 0Z"></path><circle cx="12" cy="10" r="3"></circle></svg></span>
+                <div>
+                  <small>Location</small>
+                  <strong>As-Shifa Hospital</strong>
+                  <p>Dhahran 34464, Saudi Arabia</p>
+                </div>
+              </div>
+              <div class="summary-item">
+                <span><svg viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"></circle><path d="M20 21a8 8 0 0 0-16 0"></path></svg></span>
+                <div>
+                  <small>Patient Details</small>
+                  <strong id="summaryPatientName">Nora Alkuwaihes</strong>
+                  <p>ID: <span id="summaryPatientId">PT-1029</span> - Female, 23</p>
+                </div>
+              </div>
+              <div class="summary-item">
+                <span><svg viewBox="0 0 24 24"><path d="M14 2H7a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V7Z"></path><path d="M14 2v5h5M9 15h6M9 11h2"></path></svg></span>
+                <div>
+                  <small>Reason for Visit</small>
+                  <strong id="summaryReason">Routine Checkup</strong>
+                  <p>Follow-up on skin condition</p>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <aside class="security-panel">
+            <div class="security-box">
+              <div class="security-title">
+                <span><svg viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10Z"></path><path d="m9 12 2 2 4-5"></path></svg></span>
+                <div>
+                  <h2>Security Verification</h2>
+                  <p>Audited access required</p>
+                </div>
+              </div>
+
+              <div class="audit-note">
+                <input type="checkbox" id="acknowledgeCheckbox" aria-label="Acknowledge audit log" />
+                <label for="acknowledgeCheckbox">
+                  <strong>Acknowledge Audit Log</strong>
+                  <p>This booking action will be recorded with your ID.</p>
+                </label>
+              </div>
+
+              <form class="pin-card" id="confirmBookingForm">
+                <label>Digital Authorization</label>
+                <div class="pin-inputs" aria-label="Verification PIN">
+                  <input inputmode="numeric" maxlength="1" autocomplete="one-time-code" aria-label="PIN digit 1" />
+                  <input inputmode="numeric" maxlength="1" aria-label="PIN digit 2" />
+                  <input inputmode="numeric" maxlength="1" aria-label="PIN digit 3" />
+                  <input inputmode="numeric" maxlength="1" aria-label="PIN digit 4" />
+                </div>
+                <button class="text-button" type="button" id="resendPinButton">Resend PIN</button>
+                <p class="confirm-message" id="confirmMessage" role="status" aria-live="polite"></p>
+              </form>
+            </div>
+
+            <button class="confirm-button" id="confirmBookingButton" type="submit" form="confirmBookingForm">
+              Book Appointment
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m9 12 2 2 4-5"></path><circle cx="12" cy="12" r="10"></circle></svg>
+            </button>
+            <a class="secondary-action" href="book-appointment.html">Back</a>
+            <a class="secondary-action" href="appointments.html">Cancel</a>
+          </aside>
+        </div>
+      </section>
+
+      <section class="security-verification-panel" id="securityVerificationPanel" aria-live="polite" hidden>
+        <div class="verification-card">
+          <div class="verification-title">
+            <span aria-hidden="true">
+              <svg viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10Z"></path><path d="M12 8v5"></path><path d="M12 16h.01"></path></svg>
+            </span>
+            <div>
+              <h2>Security Verification</h2>
+              <p>Please verify you are human to proceed with scheduling.</p>
+            </div>
+          </div>
+
+          <label class="human-check">
+            <input id="humanCheck" type="checkbox" />
+            <span>I am human</span>
+            <small>Privacy - Terms</small>
+          </label>
+
+          <div class="captcha-card">
+            <div class="captcha-head">
+              <small>Select all images with</small>
+              <strong>medical facilities</strong>
+            </div>
+            <div class="captcha-grid" aria-label="CAPTCHA image choices">
+              <button type="button">Hospital</button>
+              <button type="button">Eye</button>
+              <button type="button">Clinic</button>
+              <button type="button">Taxi</button>
+              <button type="button">Hallway</button>
+              <button type="button">Street</button>
+              <button type="button">Bike</button>
+              <button type="button">ER</button>
+              <button type="button">Lake</button>
+            </div>
+            <button class="verify-human-button" id="verifyHumanButton" type="button">Verify</button>
+          </div>
+        </div>
+
+        <button class="submit-disabled" id="blockedSubmitButton" type="button" disabled>
+          <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="5" y="11" width="14" height="10" rx="2"></rect><path d="M8 11V8a4 4 0 0 1 8 0v3"></path></svg>
+          Submit Appointment
+        </button>
+      </section>
+
+      <section class="verified-toast" id="verifiedToast" role="status" aria-live="polite" hidden>
+        <span aria-hidden="true">
+          <svg viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10Z"></path><path d="m9 12 2 2 4-5"></path></svg>
+        </span>
+        <div>
+          <strong>You are verified</strong>
+          <p>you can proceed to the scheduling process</p>
+        </div>
+      </section>
+    </main>
+
+    <script src="website.js?v=47"></script>
+  </body>
+</html>

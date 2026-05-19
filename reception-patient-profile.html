@@ -1,0 +1,300 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>As-Shifa Patients</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body class="dashboard-page reception-patient-page">
+    <aside class="sidebar">
+      <div class="side-brand">
+        <div class="side-logo" aria-hidden="true">
+          <svg viewBox="0 0 40 40">
+            <rect x="2" y="2" width="36" height="36" rx="9"></rect>
+            <path d="M12 28V12h7v16M21 28V9h7v19M8 28h24"></path>
+            <path d="M15.5 16v8M11.5 20h8M24.5 15v4M22.5 17h4"></path>
+          </svg>
+        </div>
+        <strong>As-Shifa</strong>
+      </div>
+
+      <nav class="side-nav" aria-label="Main navigation">
+        <a href="#"><svg viewBox="0 0 24 24"><path d="M12 3a9 9 0 1 0 9 9h-9V3Z"></path><path d="M13 3.05A9 9 0 0 1 20.95 11H13V3.05Z"></path></svg>Dashboard</a>
+        <a href="#"><svg viewBox="0 0 24 24"><path d="M16 21v-2a4 4 0 0 0-8 0v2"></path><circle cx="12" cy="7" r="4"></circle><path d="M6 10H4m16 0h-2M12 14v2"></path></svg>Doctors</a>
+        <a class="active" href="reception-patient-profile.html"><svg viewBox="0 0 24 24"><path d="M16 21v-2a4 4 0 0 0-8 0v2"></path><circle cx="12" cy="7" r="4"></circle><path d="M22 21v-2a4 4 0 0 0-3-3.87M2 21v-2a4 4 0 0 1 3-3.87"></path></svg>Patients</a>
+        <a href="appointments.html"><svg viewBox="0 0 24 24"><path d="M8 2v4m8-4v4M3 10h18"></path><rect x="3" y="4" width="18" height="18" rx="2"></rect><path d="m9 16 2 2 4-5"></path></svg>Appointments</a>
+        <a href="#"><svg viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8Z"></path><path d="M14 2v6h6M9 15h6M9 18h6M9 12h2"></path></svg>Billing</a>
+        <a href="#"><svg viewBox="0 0 24 24"><path d="M3 3v18h18"></path><path d="m7 14 4-4 3 3 5-6"></path></svg>Reports</a>
+        <a href="#"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="3"></circle><path d="M19.4 15a1.7 1.7 0 0 0 .34 1.88l.06.06a2 2 0 1 1-2.83 2.83l-.06-.06A1.7 1.7 0 0 0 15 19.4a1.7 1.7 0 0 0-1 .6 1.7 1.7 0 0 0-.4 1.1V21a2 2 0 1 1-4 0v-.09A1.7 1.7 0 0 0 8.6 19.4a1.7 1.7 0 0 0-1.88.34l-.06.06a2 2 0 1 1-2.83-2.83l.06-.06A1.7 1.7 0 0 0 4.6 15a1.7 1.7 0 0 0-.6-1 1.7 1.7 0 0 0-1.1-.4H3a2 2 0 1 1 0-4h.09A1.7 1.7 0 0 0 4.6 8.6a1.7 1.7 0 0 0-.34-1.88l-.06-.06A2 2 0 1 1 6.83 3.83l.06.06A1.7 1.7 0 0 0 9 4.6a1.7 1.7 0 0 0 1-.6 1.7 1.7 0 0 0 .4-1.1V3a2 2 0 1 1 4 0v.09A1.7 1.7 0 0 0 15.4 4.6a1.7 1.7 0 0 0 1.88-.34l.06-.06a2 2 0 1 1 2.83 2.83l-.06.06A1.7 1.7 0 0 0 19.4 9c.2.37.52.68.9.9.31.18.68.3 1.1.3h.1a2 2 0 1 1 0 4h-.09a1.7 1.7 0 0 0-1.51.8Z"></path></svg>Settings</a>
+      </nav>
+
+      <div class="staff-card">
+        <span>RC</span>
+        <strong>Receptionist: Rahf Altwairqi</strong>
+      </div>
+    </aside>
+
+    <main class="appointments-main">
+      <header class="topbar">
+        <div class="crumb">
+          <span>Patients</span>
+          <svg viewBox="0 0 20 20" aria-hidden="true"><path d="m7 4 6 6-6 6"></path></svg>
+        </div>
+        <div class="top-actions">
+          <button class="date-button"><svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="18" rx="2"></rect><path d="M8 2v4m8-4v4M3 10h18"></path></svg>Today, May 3<svg viewBox="0 0 20 20"><path d="m5.5 7.5 4.5 4.5 4.5-4.5"></path></svg></button>
+          <button class="round-action notification-dot" aria-label="Notifications"><svg viewBox="0 0 24 24"><path d="M18 8a6 6 0 1 0-12 0c0 7-3 7-3 9h18c0-2-3-2-3-9"></path><path d="M13.73 21a2 2 0 0 1-3.46 0"></path></svg></button>
+          <span class="profile-dot">RC</span>
+        </div>
+      </header>
+
+      <section class="patients-content">
+        <div class="patient-tools">
+          <div class="patient-tabs" aria-label="Patient list filters">
+            <button class="active" type="button">All Patients</button>
+            <button type="button">Recent</button>
+            <button type="button">Follow-ups</button>
+          </div>
+
+          <label class="patient-search">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7"></circle><path d="m16 16 5 5"></path></svg>
+            <input type="search" placeholder="Search patients by name or ID..." />
+          </label>
+
+          <button class="filter-button" type="button">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M22 3H2l8 9v7l4 2v-9l8-9Z"></path></svg>
+            Filter
+          </button>
+        </div>
+
+        <div class="patient-list-grid">
+          <article class="record-card" data-patient-id="PT-1029" data-patient-name="Nora Alkuwaihes" data-patient-initials="NK">
+            <button class="card-menu" type="button" aria-label="More options">⋮</button>
+            <span class="online-dot" aria-hidden="true"></span>
+            <div class="record-head">
+              <span class="patient-avatar avatar-woman" aria-hidden="true"></span>
+              <h2>Nora<br />Alkuwaihes</h2>
+            </div>
+            <p>ID: PT-1029</p>
+            <div class="patient-tags">
+              <span>23 • F</span>
+              <span><i></i>General</span>
+            </div>
+            <div class="record-actions">
+              <button class="view-record-button" type="button">View Record</button>
+              <button class="icon-tile" type="button" aria-label="Call patient"><svg viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.8 19.8 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.12 4.18 2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.12.89.33 1.76.62 2.6a2 2 0 0 1-.45 2.11L8 9.71a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.84.29 1.71.5 2.6.62A2 2 0 0 1 22 16.92Z"></path></svg></button>
+              <button class="icon-tile solid" type="button" aria-label="Schedule appointment"><svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="18" rx="2"></rect><path d="M8 2v4m8-4v4M3 10h18M12 14v4m-2-2h4"></path></svg></button>
+            </div>
+          </article>
+
+          <article class="record-card" data-patient-id="PT-1027" data-patient-name="Jude Alharbi" data-patient-initials="JA">
+            <button class="card-menu" type="button" aria-label="More options">⋮</button>
+            <div class="record-head">
+              <span class="patient-avatar avatar-woman" aria-hidden="true"></span>
+              <h2>Jude Alharbi</h2>
+            </div>
+            <p>ID: PT-1027</p>
+            <div class="patient-tags">
+              <span>24 • F</span>
+              <span class="tag-orange"><i></i>Cardiology</span>
+            </div>
+            <div class="record-actions">
+              <button class="view-record-button" type="button">View Record</button>
+              <button class="icon-tile" type="button" aria-label="Call patient"><svg viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.8 19.8 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.12 4.18 2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.12.89.33 1.76.62 2.6a2 2 0 0 1-.45 2.11L8 9.71a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.84.29 1.71.5 2.6.62A2 2 0 0 1 22 16.92Z"></path></svg></button>
+              <button class="icon-tile solid" type="button" aria-label="Schedule appointment"><svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="18" rx="2"></rect><path d="M8 2v4m8-4v4M3 10h18M12 14v4m-2-2h4"></path></svg></button>
+            </div>
+          </article>
+
+          <article class="record-card" data-patient-id="PT-1101" data-patient-name="Ali Sulais" data-patient-initials="AS">
+            <button class="card-menu" type="button" aria-label="More options">⋮</button>
+            <div class="record-head">
+              <span class="patient-avatar avatar-man" aria-hidden="true"></span>
+              <h2>Ali Sulais</h2>
+            </div>
+            <p>ID: PT-1101</p>
+            <div class="patient-tags">
+              <span>60 • M</span>
+              <span class="tag-blue"><i></i>Orthopedics</span>
+            </div>
+            <div class="record-actions">
+              <button class="view-record-button" type="button">View Record</button>
+              <button class="icon-tile" type="button" aria-label="Call patient"><svg viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.8 19.8 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.12 4.18 2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.12.89.33 1.76.62 2.6a2 2 0 0 1-.45 2.11L8 9.71a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.84.29 1.71.5 2.6.62A2 2 0 0 1 22 16.92Z"></path></svg></button>
+              <button class="icon-tile solid" type="button" aria-label="Schedule appointment"><svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="18" rx="2"></rect><path d="M8 2v4m8-4v4M3 10h18M12 14v4m-2-2h4"></path></svg></button>
+            </div>
+          </article>
+
+          <article class="record-card" data-patient-id="PT-1025" data-patient-name="Tariq Altwairqi" data-patient-initials="TA">
+            <button class="card-menu" type="button" aria-label="More options">⋮</button>
+            <div class="record-head">
+              <span class="patient-avatar avatar-man" aria-hidden="true"></span>
+              <h2>Tariq Altwairqi</h2>
+            </div>
+            <p>ID: PT-1025</p>
+            <div class="patient-tags">
+              <span>40 • M</span>
+              <span class="tag-purple"><i></i>Neurology</span>
+            </div>
+            <div class="record-actions">
+              <button class="view-record-button" type="button">View Record</button>
+              <button class="icon-tile" type="button" aria-label="Call patient"><svg viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.8 19.8 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.12 4.18 2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.12.89.33 1.76.62 2.6a2 2 0 0 1-.45 2.11L8 9.71a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.84.29 1.71.5 2.6.62A2 2 0 0 1 22 16.92Z"></path></svg></button>
+              <button class="icon-tile solid" type="button" aria-label="Schedule appointment"><svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="18" rx="2"></rect><path d="M8 2v4m8-4v4M3 10h18M12 14v4m-2-2h4"></path></svg></button>
+            </div>
+          </article>
+
+          <article class="record-card" data-patient-id="PT-1024" data-patient-name="Noor Sulais" data-patient-initials="NS">
+            <button class="card-menu" type="button" aria-label="More options">⋮</button>
+            <div class="record-head">
+              <span class="patient-avatar avatar-woman" aria-hidden="true"></span>
+              <h2>Noor Sulais</h2>
+            </div>
+            <p>ID: PT-1024</p>
+            <div class="patient-tags">
+              <span>32 • F</span>
+              <span><i></i>General</span>
+            </div>
+            <div class="record-actions">
+              <button class="view-record-button" type="button">View Record</button>
+              <button class="icon-tile" type="button" aria-label="Call patient"><svg viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.8 19.8 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.12 4.18 2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.12.89.33 1.76.62 2.6a2 2 0 0 1-.45 2.11L8 9.71a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.84.29 1.71.5 2.6.62A2 2 0 0 1 22 16.92Z"></path></svg></button>
+              <button class="icon-tile solid" type="button" aria-label="Schedule appointment"><svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="18" rx="2"></rect><path d="M8 2v4m8-4v4M3 10h18M12 14v4m-2-2h4"></path></svg></button>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <div class="role-restricted-modal" id="roleRestrictedModal" aria-hidden="true">
+        <div class="record-access-backdrop"></div>
+        <article class="role-restricted-card">
+          <div class="role-lock-mark" aria-hidden="true">
+            <svg viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10Z"></path><path d="M9 12h6"></path><path d="M12 9v6"></path></svg>
+            <span><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"></circle><path d="m8 8 8 8"></path></svg></span>
+          </div>
+
+          <h2>Access Restricted</h2>
+          <p>You are not authorized to view this patient medical record.</p>
+
+          <div class="role-compare">
+            <div>
+              <small>Current Role</small>
+              <strong><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="5" y="4" width="14" height="16" rx="2"></rect><path d="M9 10h6M12 7v6"></path></svg>Receptionist</strong>
+            </div>
+            <div>
+              <small>Required Role</small>
+              <strong><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 2v6a4 4 0 0 0 8 0V2"></path><path d="M12 14v4a4 4 0 0 1-8 0v-2"></path><circle cx="20" cy="16" r="2"></circle></svg>Doctor</strong>
+            </div>
+          </div>
+
+          <div class="role-note">
+            <p>Access to patient records is restricted based on role-based access control (RBAC). Your current account does not have the necessary clinical clearance levels to access detailed medical histories for <strong id="restrictedPatientId">ID: #8821</strong>.</p>
+            <span>Audit log notice: this access attempt has been logged.</span>
+          </div>
+
+          <div class="role-actions">
+            <button class="return-dashboard-button" id="returnPatientsButton" type="button">Return to Dashboard</button>
+            <button class="request-access-button" id="requestAuthorizedAccessButton" type="button">Request Authorized Access</button>
+          </div>
+
+          <footer>HIPAA compliant sanctuary systems</footer>
+        </article>
+      </div>
+
+      <div class="record-access-modal" id="recordAccessModal" aria-hidden="true">
+        <div class="record-access-backdrop" data-close-access></div>
+        <form class="access-dialog" id="accessVerificationForm" aria-label="Access verification">
+          <div class="access-header">
+            <span class="access-icon">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10Z"></path><path d="M12 8v4"></path><path d="M12 16h.01"></path></svg>
+            </span>
+            <div>
+              <h2>Access Verification</h2>
+              <p>Protected Health Information (PHI)</p>
+            </div>
+            <button class="access-close" type="button" data-close-access aria-label="Close access verification">×</button>
+          </div>
+
+          <div class="access-body">
+            <div class="access-patient">
+              <span id="accessPatientInitials">NK</span>
+              <div>
+                <strong id="accessPatientName">Nora Alkuwaihes</strong>
+                <p>ID:<span id="accessPatientId">PT-1029</span></p>
+              </div>
+              <em>Pending Status</em>
+            </div>
+
+            <label class="access-reason">
+              <span>Reason for Access <strong>*</strong></span>
+              <textarea id="accessReason" placeholder="Briefly state clinical or administrative reason..."></textarea>
+            </label>
+
+            <div class="access-code">
+              <div class="access-code-head">
+                <div>
+                  <strong>Authentication Code</strong>
+                  <p>Enter the 6-digit code sent to your registered device.</p>
+                </div>
+                <span id="accessCodeTimer">02:59</span>
+              </div>
+              <div class="access-code-inputs" aria-label="Authentication code">
+                <input inputmode="numeric" maxlength="1" aria-label="Code digit 1" />
+                <input inputmode="numeric" maxlength="1" aria-label="Code digit 2" />
+                <input inputmode="numeric" maxlength="1" aria-label="Code digit 3" />
+                <i aria-hidden="true"></i>
+                <input inputmode="numeric" maxlength="1" aria-label="Code digit 4" />
+                <input inputmode="numeric" maxlength="1" aria-label="Code digit 5" />
+                <input inputmode="numeric" maxlength="1" aria-label="Code digit 6" />
+              </div>
+              <p class="access-resend">Didn't receive code? <button id="resendAccessCodeButton" type="button">Resend</button></p>
+              <p class="access-resend-message" id="accessResendMessage" role="status" aria-live="polite"></p>
+              <p class="access-message" id="accessMessage" role="status" aria-live="polite"></p>
+            </div>
+          </div>
+
+          <div class="access-footer">
+            <button class="access-cancel" type="button" data-close-access>Cancel</button>
+            <button class="access-verify" type="submit">Verify Access <span>→</span></button>
+          </div>
+        </form>
+      </div>
+
+      <div class="access-granted-modal" id="accessGrantedModal" aria-hidden="true">
+        <div class="record-access-backdrop"></div>
+        <article class="access-granted-card">
+          <span class="granted-mark">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m7 12 3 3 7-8"></path></svg>
+          </span>
+          <h2>Access granted</h2>
+          <p>You have successfully verified your identity. Your secure session to view this patient record will remain active for <strong>24 hr</strong>.</p>
+          <button class="continue-record-button" id="continueRecordButton" type="button">Continue to Record</button>
+          <button class="back-patients-button" id="backPatientsButton" type="button">Back to Patients</button>
+        </article>
+      </div>
+
+      <div class="access-denied-modal" id="accessDeniedModal" aria-hidden="true">
+        <div class="record-access-backdrop"></div>
+        <article class="access-denied-card">
+          <span class="denied-mark">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M18 6 6 18"></path><path d="m6 6 12 12"></path></svg>
+          </span>
+          <h2>Access denied</h2>
+          <p>Incorrect or expired verification code. Please ensure you have entered the 6-digit code sent to your registered device.</p>
+          <span class="attempts-pill">Remaining attempts: <strong id="remainingAttempts">2</strong></span>
+          <button class="try-again-button" id="tryAgainButton" type="button">Try Again</button>
+          <button class="denied-cancel-button" id="deniedCancelButton" type="button">Cancel</button>
+        </article>
+      </div>
+
+      <section class="request-submitted-toast" id="requestSubmittedToast" role="status" aria-live="polite" hidden>
+        <span aria-hidden="true">
+          <svg viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10Z"></path><path d="m9 12 2 2 4-5"></path></svg>
+        </span>
+        <div>
+          <strong>Request submitted</strong>
+          <p>Access authorization request submitted</p>
+        </div>
+      </section>
+    </main>
+
+    <script src="backend-adapter.js?v=1"></script>
+    <script src="website.js?v=43"></script>
+  </body>
+</html>

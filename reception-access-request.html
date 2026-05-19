@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Request Access Authorization</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body class="dashboard-page reception-access-request-page">
+    <aside class="sidebar">
+      <div class="side-brand">
+        <div class="side-logo" aria-hidden="true">
+          <svg viewBox="0 0 40 40">
+            <rect x="2" y="2" width="36" height="36" rx="9"></rect>
+            <path d="M12 28V12h7v16M21 28V9h7v19M8 28h24"></path>
+            <path d="M15.5 16v8M11.5 20h8M24.5 15v4M22.5 17h4"></path>
+          </svg>
+        </div>
+        <strong>As-Shifa</strong>
+      </div>
+
+      <nav class="side-nav" aria-label="Main navigation">
+        <a href="#"><svg viewBox="0 0 24 24"><path d="M12 3a9 9 0 1 0 9 9h-9V3Z"></path><path d="M13 3.05A9 9 0 0 1 20.95 11H13V3.05Z"></path></svg>Dashboard</a>
+        <a href="#"><svg viewBox="0 0 24 24"><path d="M16 21v-2a4 4 0 0 0-8 0v2"></path><circle cx="12" cy="7" r="4"></circle><path d="M6 10H4m16 0h-2M12 14v2"></path></svg>Doctors</a>
+        <a class="active" href="reception-patient-profile.html"><svg viewBox="0 0 24 24"><path d="M16 21v-2a4 4 0 0 0-8 0v2"></path><circle cx="12" cy="7" r="4"></circle><path d="M22 21v-2a4 4 0 0 0-3-3.87M2 21v-2a4 4 0 0 1 3-3.87"></path></svg>Patients</a>
+        <a href="appointments.html"><svg viewBox="0 0 24 24"><path d="M8 2v4m8-4v4M3 10h18"></path><rect x="3" y="4" width="18" height="18" rx="2"></rect><path d="m9 16 2 2 4-5"></path></svg>Appointments</a>
+        <a href="#"><svg viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8Z"></path><path d="M14 2v6h6M9 15h6M9 18h6M9 12h2"></path></svg>Billing</a>
+        <a href="#"><svg viewBox="0 0 24 24"><path d="M3 3v18h18"></path><path d="m7 14 4-4 3 3 5-6"></path></svg>Reports</a>
+        <a href="#"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="3"></circle><path d="M19.4 15a1.7 1.7 0 0 0 .34 1.88l.06.06a2 2 0 1 1-2.83 2.83l-.06-.06A1.7 1.7 0 0 0 15 19.4a1.7 1.7 0 0 0-1 .6 1.7 1.7 0 0 0-.4 1.1V21a2 2 0 1 1-4 0v-.09A1.7 1.7 0 0 0 8.6 19.4a1.7 1.7 0 0 0-1.88.34l-.06.06a2 2 0 1 1-2.83-2.83l.06-.06A1.7 1.7 0 0 0 4.6 15a1.7 1.7 0 0 0-.6-1 1.7 1.7 0 0 0-1.1-.4H3a2 2 0 1 1 0-4h.09A1.7 1.7 0 0 0 4.6 8.6a1.7 1.7 0 0 0-.34-1.88l-.06-.06A2 2 0 1 1 6.83 3.83l.06.06A1.7 1.7 0 0 0 9 4.6a1.7 1.7 0 0 0 1-.6 1.7 1.7 0 0 0 .4-1.1V3a2 2 0 1 1 4 0v.09A1.7 1.7 0 0 0 15.4 4.6a1.7 1.7 0 0 0 1.88-.34l.06-.06A2 2 0 1 1 18.83 3.83l-.06.06A1.7 1.7 0 0 0 19.4 9c.2.37.52.68.9.9.31.18.68.3 1.1.3h.1a2 2 0 1 1 0 4h-.09a1.7 1.7 0 0 0-1.51.8Z"></path></svg>Settings</a>
+      </nav>
+
+      <div class="staff-card">
+        <span>RC</span>
+        <strong>Receptionist: Rahf Altwairqi</strong>
+      </div>
+    </aside>
+
+    <main class="appointments-main">
+      <header class="topbar">
+        <div class="crumb">
+          <span>Patients</span>
+          <svg viewBox="0 0 20 20" aria-hidden="true"><path d="m7 4 6 6-6 6"></path></svg>
+        </div>
+        <div class="top-actions">
+          <button class="date-button"><svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="18" rx="2"></rect><path d="M8 2v4m8-4v4M3 10h18"></path></svg>Today, May 3<svg viewBox="0 0 20 20"><path d="m5.5 7.5 4.5 4.5 4.5-4.5"></path></svg></button>
+          <button class="round-action notification-dot" aria-label="Notifications"><svg viewBox="0 0 24 24"><path d="M18 8a6 6 0 1 0-12 0c0 7-3 7-3 9h18c0-2-3-2-3-9"></path><path d="M13.73 21a2 2 0 0 1-3.46 0"></path></svg></button>
+          <span class="profile-dot">RC</span>
+        </div>
+      </header>
+
+      <section class="request-access-content">
+        <div class="request-title">
+          <span aria-hidden="true">
+            <svg viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10Z"></path><path d="m9 12 2 2 4-5"></path></svg>
+          </span>
+          <div>
+            <h1>Request Access Authorization</h1>
+            <p>Submit a request to access this patient record</p>
+          </div>
+        </div>
+
+        <div class="request-access-grid">
+          <aside class="request-target-column">
+            <article class="request-target-card">
+              <h2>Target Profile</h2>
+              <small>Patient Name</small>
+              <strong id="requestPatientName">Nora Alkuwaihes</strong>
+              <small>Patient ID</small>
+              <span id="requestPatientId">PT-1029</span>
+              <small>Record Type</small>
+              <p><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8Z"></path><path d="M14 2v6h6M9 15h6M9 11h2"></path></svg>Medical Record</p>
+              <em><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="5" y="11" width="14" height="10" rx="2"></rect><path d="M8 11V8a4 4 0 0 1 8 0v3"></path></svg>Restricted Access Active</em>
+            </article>
+
+            <article class="request-security-note">
+              <span>i</span>
+              <div>
+                <strong>Security Note</strong>
+                <p>Unauthorized or unjustified access attempts may be denied and flagged for disciplinary review.</p>
+              </div>
+            </article>
+          </aside>
+
+          <form class="request-access-form" id="requestAccessForm">
+            <div class="request-form-row">
+              <label>
+                <span>Access Purpose</span>
+                <select id="requestPurpose">
+                  <option>Clinical Review</option>
+                  <option>Appointment Coordination</option>
+                  <option>Insurance Documentation</option>
+                  <option>Patient Follow-up</option>
+                </select>
+              </label>
+
+              <label>
+                <span>Urgency Level</span>
+                <select id="requestUrgency">
+                  <option>Normal</option>
+                  <option>Urgent</option>
+                  <option>Emergency</option>
+                </select>
+              </label>
+            </div>
+
+            <label class="request-reason-field">
+              <span>Reason for Access</span>
+              <textarea id="requestAccessReason" placeholder="Enter justification for accessing this patient record"></textarea>
+            </label>
+
+            <div class="compliance-policy">
+              <span aria-hidden="true">
+                <svg viewBox="0 0 24 24"><path d="M10.3 3.9 2.4 18a2 2 0 0 0 1.7 3h15.8a2 2 0 0 0 1.7-3L13.7 3.9a2 2 0 0 0-3.4 0Z"></path><path d="M12 9v4"></path><path d="M12 17h.01"></path></svg>
+              </span>
+              <div>
+                <strong>Compliance Policy Statement</strong>
+                <p>All access requests are logged and reviewed for compliance. By submitting this request, you acknowledge that you are accessing this data for authorized medical purposes only.</p>
+              </div>
+            </div>
+
+            <p class="request-form-message" id="requestFormMessage" role="status" aria-live="polite"></p>
+
+            <div class="request-form-actions">
+              <a href="reception-patient-profile.html">Cancel</a>
+              <button type="submit">Submit Request</button>
+            </div>
+          </form>
+        </div>
+      </section>
+
+      <div class="audit-toast" id="auditToast">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10Z"></path><path d="m9 12 2 2 4-5"></path></svg>
+        <div>
+          <strong>Audit Active</strong>
+          <p>Session IP: 192.168.1.104</p>
+        </div>
+      </div>
+    </main>
+
+    <script src="website.js?v=43"></script>
+  </body>
+</html>

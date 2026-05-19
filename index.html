@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>As-Shifa Login</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body class="login-page">
+    <main class="login-shell">
+      <section class="brand-panel" aria-label="As-Shifa secure healthcare">
+        <div class="brand-lockup">
+          <div class="brand-icon" aria-hidden="true">
+            <svg viewBox="0 0 40 40" role="img">
+              <rect x="2" y="2" width="36" height="36" rx="9"></rect>
+              <path d="M12 28V12h7v16" class="icon-cut"></path>
+              <path d="M21 28V9h7v19" class="icon-cut"></path>
+              <path d="M15.5 16v8M11.5 20h8" class="icon-green"></path>
+              <path d="M24.5 15v4M22.5 17h4" class="icon-green"></path>
+              <path d="M27.5 22h4.5v6h-4.5z" class="icon-green-fill"></path>
+              <path d="M8 28h24" class="icon-cut"></path>
+            </svg>
+          </div>
+          <span>As-Shifa</span>
+        </div>
+
+        <div class="brand-copy">
+          <h1>Secure Healthcare<br />Management</h1>
+          <p>Secure access for staff and patients. Your data is protected using strong encryption.</p>
+        </div>
+      </section>
+
+      <section class="login-panel" aria-label="Login form">
+        <form class="login-card" id="loginForm">
+          <div class="login-heading">
+            <h2>Welcome Back</h2>
+            <p>Please log in to access the system.</p>
+          </div>
+
+          <label class="field">
+            <span>Role Selection</span>
+            <span class="select-wrap">
+              <select id="role" name="role">
+                <option value="" selected>Select Role</option>
+                <option value="doctor">Doctor</option>
+                <option value="patient">Patient</option>
+                <option value="receptionist">Receptionist (Clinic Staff)</option>
+              </select>
+              <svg viewBox="0 0 20 20" aria-hidden="true">
+                <path d="m5.5 7.5 4.5 4.5 4.5-4.5"></path>
+              </svg>
+            </span>
+          </label>
+
+          <label class="field">
+            <span>User ID</span>
+            <input id="username" name="username" type="text" autocomplete="username" />
+          </label>
+
+          <label class="field">
+            <span>Password</span>
+            <span class="password-wrap">
+              <input id="password" name="password" type="password" autocomplete="current-password" />
+              <button class="icon-button" type="button" id="togglePassword" aria-label="Show password">
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="M2.5 12s3.5-6 9.5-6 9.5 6 9.5 6-3.5 6-9.5 6-9.5-6-9.5-6Z"></path>
+                  <circle cx="12" cy="12" r="3"></circle>
+                </svg>
+              </button>
+            </span>
+          </label>
+
+          <a class="forgot-link" href="#">Forgot Password?</a>
+
+          <button class="login-button" type="submit">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M15 3h3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2h-3"></path>
+              <path d="M10 17l5-5-5-5"></path>
+              <path d="M15 12H3"></path>
+            </svg>
+            <span>Log In</span>
+          </button>
+
+          <p class="login-message" id="loginMessage" role="status" aria-live="polite"></p>
+
+          <p class="create-account">Don't have an account? <a href="#">Create patient account</a></p>
+
+          <div class="status-row">
+            <span class="system-status">
+              <svg viewBox="0 0 20 20" aria-hidden="true">
+                <circle cx="10" cy="10" r="8"></circle>
+                <path d="m6.7 10.2 2.1 2.1 4.6-4.8"></path>
+              </svg>
+              System Operational
+            </span>
+            <span class="divider" aria-hidden="true"></span>
+            <a href="#">Privacy Policy</a>
+          </div>
+        </form>
+      </section>
+    </main>
+
+    <script src="website.js?v=43"></script>
+  </body>
+</html>

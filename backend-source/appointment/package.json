@@ -1,0 +1,12 @@
+{
+  "name": "uc04-schedule-appointment",
+  "version": "1.0.0",
+  "description": "UC-04 Schedule Appointment backend, security controls, and data",
+  "main": "appointmentTest.js",
+  "scripts": {
+    "test": "node appointmentTest.js",
+    "start": "node appointmentTest.js"
+  },
+  "author": "Team 7",
+  "license": "ISC"
+}
