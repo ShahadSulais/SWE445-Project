@@ -4,11 +4,14 @@ As-Shifa Secure Healthcare Management System is a SWE 445 secure software develo
 
 The final implementation is a static HTML/CSS/JavaScript web application connected to a lightweight Node.js server and in-memory backend modules for the selected use cases.
 
-## Team Members
+## Team #7
 
-| # | Student Name |
+| Name | ID |
 | --- | --- |
-| 1 | Shahad Sulais |
+| Shahad Sulais | 202181130 |
+| Nora Alkuwaihes | 202171050 |
+| Reem Abdelgawad | 202183010 |
+| Rahf Altwairqi | 202156370 |
 
 ## Project Scope
 
