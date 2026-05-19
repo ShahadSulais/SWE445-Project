@@ -1,6 +1,8 @@
-# As-Shifa Secure Healthcare Management System
+# Secure Healthcare Management System
 
-As-Shifa Secure Healthcare Management System is a SWE 445 secure software development project for managing healthcare records, appointment booking, and controlled medical data sharing. The project focuses on building healthcare workflows with security controls such as role-based access control, OTP verification, consent, audit logging, input validation, and rate limiting.
+Secure healthcare management system supporting appointment scheduling, secure medical record access, and protected patient data sharing.
+
+This SWE 445 project focuses on building healthcare workflows with security controls such as role-based access control, OTP verification, consent, audit logging, input validation, and rate limiting.
 
 The final implementation is a static HTML/CSS/JavaScript web application connected to a lightweight Node.js server and in-memory backend modules for the selected use cases.
 
